@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0476A22E99F1ED8272E989FD02B92D6E /* MyPlugin */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 020F79FAC2B23DF518278E01ACE62CB4 /* Build configuration list for PBXAggregateTarget "MyPlugin" */;
+			buildPhases = (
+			);
+			dependencies = (
+				6F293667350CBC2087AD00B35B474FDF /* PBXTargetDependency */,
+			);
+			name = MyPlugin;
+		};
+		57F00620CC6085667A9D55C98C9CF24A /* GCIDOSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 95CEA03A8BFD21854652E1A78C5AD770 /* Build configuration list for PBXAggregateTarget "GCIDOSDK" */;
+			buildPhases = (
+				AE0C7582155C1A3A6E4D7CE2CEE1896B /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				2185198F4CE068D893950ECB623EB276 /* PBXTargetDependency */,
+			);
+			name = GCIDOSDK;
+		};
+		8194323886ECAF7E912EFDAFC84017AA /* ZXSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CF16DD0C65D103BA9A0FAA1C2DCE2FA5 /* Build configuration list for PBXAggregateTarget "ZXSDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = ZXSDK;
+		};
+		997E783A70C18DC9BA830488608C03AA /* GTCommonSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 925AE37F870B95EE783FF7E4B0F6CBB2 /* Build configuration list for PBXAggregateTarget "GTCommonSDK" */;
+			buildPhases = (
+				C768A3EDB887B8DD6F23BA4E3F822EE3 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				FC3803304F6A00503240473D323E21E5 /* PBXTargetDependency */,
+			);
+			name = GTCommonSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1F45E6849BD16E901B01C614E41B8B98 /* Pods-wxed34e654870cba42-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A8F679B4C9362FF3CB4901B7503F1B /* Pods-wxed34e654870cba42-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4ACBBD294B6D6C71794278119ABC4EE /* Pods-wxed34e654870cba42-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2DAD021247EA953A616CF56973A9DB /* Pods-wxed34e654870cba42-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		077546D9FB829D5346415CD7C1DAD003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0476A22E99F1ED8272E989FD02B92D6E;
+			remoteInfo = MyPlugin;
+		};
+		2EA88307324895BA78EAE3836604D692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 997E783A70C18DC9BA830488608C03AA;
+			remoteInfo = GTCommonSDK;
+		};
+		3FAE300A630CBA7D325B6D5FC7C3828A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8194323886ECAF7E912EFDAFC84017AA;
+			remoteInfo = ZXSDK;
+		};
+		4FC77ADBAF3DA3F37EB7F2881676F385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8194323886ECAF7E912EFDAFC84017AA;
+			remoteInfo = ZXSDK;
+		};
+		7D17D9651C1FDBA4BCA9017C749CEB9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57F00620CC6085667A9D55C98C9CF24A;
+			remoteInfo = GCIDOSDK;
+		};
+		914AADF885E91A7599C02DC3FB6272FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57F00620CC6085667A9D55C98C9CF24A;
+			remoteInfo = GCIDOSDK;
+		};
+		C8861A83986691DFA1D0333EB060C23F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 997E783A70C18DC9BA830488608C03AA;
+			remoteInfo = GTCommonSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00BE27273517B9B595C392E91409B3E8 /* Pods-wxed34e654870cba42.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wxed34e654870cba42.release.xcconfig"; sourceTree = "<group>"; };
+		2AA2ACD760060248EDCF1C044116F1AD /* GCIDOSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCIDOSDK.release.xcconfig; sourceTree = "<group>"; };
+		2FB09CFFB84AD510F5FC36BE6EAC78F0 /* GCIDOSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCIDOSDK.debug.xcconfig; sourceTree = "<group>"; };
+		4CF08AF6B5E968E1330EEC1F36D3CFA0 /* MyPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MyPlugin.release.xcconfig; sourceTree = "<group>"; };
+		4D8E53937D67A1DD81D6161B1FA12E9C /* GTCommonSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTCommonSDK.debug.xcconfig; sourceTree = "<group>"; };
+		5A00CAB05FCC1F9BD8FE13A0620AE1AF /* MyPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MyPlugin.debug.xcconfig; sourceTree = "<group>"; };
+		5CEAF8F37C8B0E51A50A691A2EB99FB9 /* Pods-wxed34e654870cba42-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wxed34e654870cba42-acknowledgements.plist"; sourceTree = "<group>"; };
+		62FC92F28054C350040054A169E69B78 /* Pods-wxed34e654870cba42.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wxed34e654870cba42.debug.xcconfig"; sourceTree = "<group>"; };
+		685E68822BA8EF3D5F6ED593DE5E975B /* GCIDOSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GCIDOSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		6A12BEE1FF8843B7268267FDDE4FD9D3 /* MyPlugin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MyPlugin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		703E23781B77B3DC300A5DEA0C9B6853 /* Pods-wxed34e654870cba42.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wxed34e654870cba42.modulemap"; sourceTree = "<group>"; };
+		77A8F679B4C9362FF3CB4901B7503F1B /* Pods-wxed34e654870cba42-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wxed34e654870cba42-umbrella.h"; sourceTree = "<group>"; };
+		8BF23257EF9E126ED829AC9988840B92 /* ZXSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXSDK.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B2849C6554CF5180AE998713E7A50CC8 /* GTCommonSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GTCommonSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		BB2B63254C6A28E8429C39A85431F3CF /* Pods-wxed34e654870cba42 */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-wxed34e654870cba42"; path = "libPods-wxed34e654870cba42.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A7360FDA5BE7853FA64EEE1CA70756 /* ZXSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZXSDK.framework; sourceTree = "<group>"; };
+		CC2DAD021247EA953A616CF56973A9DB /* Pods-wxed34e654870cba42-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wxed34e654870cba42-dummy.m"; sourceTree = "<group>"; };
+		CE6FA409EBADB8F7A8980E204E60D2E0 /* GTCommonSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTCommonSDK.release.xcconfig; sourceTree = "<group>"; };
+		EC09078252409861C8513B3DFABF40A4 /* GTCountSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = GTCountSDK.xcframework; sourceTree = "<group>"; };
+		EE513D6342272EA8BAE6EDDE303F4B94 /* GTCommonSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = GTCommonSDK.xcframework; sourceTree = "<group>"; };
+		EF3D60CD339CC5DF3E4D7C48C68DDE06 /* ZXSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZXSDK.debug.xcconfig; sourceTree = "<group>"; };
+		F8097B07C33A42FA305CFAF7FBD81544 /* Pods-wxed34e654870cba42-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wxed34e654870cba42-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5333EE3B0B5A60EFC74BAF86B6F1F1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BFA8E0E36A456573017617A42FD9631 /* GCIDOSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6AC68DF6C235CB29D19C142578BC3DD4 /* Frameworks */,
+				70FDD6DDA175DAA7DB62AF812260C446 /* Support Files */,
+			);
+			name = GCIDOSDK;
+			path = GCIDOSDK;
+			sourceTree = "<group>";
+		};
+		11B4202594A8723CC04520EDE68A7EC2 /* ZXSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F15F60103E2A145DF369FA5BE5E34024 /* Frameworks */,
+				38B315BE13640BB347E0D82868257689 /* Support Files */,
+			);
+			name = ZXSDK;
+			path = ZXSDK;
+			sourceTree = "<group>";
+		};
+		17CC691EECF9F0638BE00A2B866E5986 /* Pods-wxed34e654870cba42 */ = {
+			isa = PBXGroup;
+			children = (
+				703E23781B77B3DC300A5DEA0C9B6853 /* Pods-wxed34e654870cba42.modulemap */,
+				F8097B07C33A42FA305CFAF7FBD81544 /* Pods-wxed34e654870cba42-acknowledgements.markdown */,
+				5CEAF8F37C8B0E51A50A691A2EB99FB9 /* Pods-wxed34e654870cba42-acknowledgements.plist */,
+				CC2DAD021247EA953A616CF56973A9DB /* Pods-wxed34e654870cba42-dummy.m */,
+				77A8F679B4C9362FF3CB4901B7503F1B /* Pods-wxed34e654870cba42-umbrella.h */,
+				62FC92F28054C350040054A169E69B78 /* Pods-wxed34e654870cba42.debug.xcconfig */,
+				00BE27273517B9B595C392E91409B3E8 /* Pods-wxed34e654870cba42.release.xcconfig */,
+			);
+			name = "Pods-wxed34e654870cba42";
+			path = "Target Support Files/Pods-wxed34e654870cba42";
+			sourceTree = "<group>";
+		};
+		1FE1B6E9DA1C8128D535B41F2D229B23 /* GTCommonSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E1E988B1CD9FE79263CD9E89FDE9C44F /* Frameworks */,
+				E0BAD7293D182B21DA80137C9965B536 /* Support Files */,
+			);
+			name = GTCommonSDK;
+			path = GTCommonSDK;
+			sourceTree = "<group>";
+		};
+		210F6D6BADA84FD856D4FF365097CDDF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				17CC691EECF9F0638BE00A2B866E5986 /* Pods-wxed34e654870cba42 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		38B315BE13640BB347E0D82868257689 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D60CD339CC5DF3E4D7C48C68DDE06 /* ZXSDK.debug.xcconfig */,
+				8BF23257EF9E126ED829AC9988840B92 /* ZXSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZXSDK";
+			sourceTree = "<group>";
+		};
+		64EDE8044ABBD9512797538F545C2C78 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4FD56F2CB2DE28878680D5F217797C7 /* MyPlugin */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6AC68DF6C235CB29D19C142578BC3DD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC09078252409861C8513B3DFABF40A4 /* GTCountSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70FDD6DDA175DAA7DB62AF812260C446 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				685E68822BA8EF3D5F6ED593DE5E975B /* GCIDOSDK-xcframeworks.sh */,
+				2FB09CFFB84AD510F5FC36BE6EAC78F0 /* GCIDOSDK.debug.xcconfig */,
+				2AA2ACD760060248EDCF1C044116F1AD /* GCIDOSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GCIDOSDK";
+			sourceTree = "<group>";
+		};
+		8F859591EC404A8C4E102E47E55E08FE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A00CAB05FCC1F9BD8FE13A0620AE1AF /* MyPlugin.debug.xcconfig */,
+				4CF08AF6B5E968E1330EEC1F36D3CFA0 /* MyPlugin.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/MyPlugin";
+			sourceTree = "<group>";
+		};
+		A9F741E3ED632A8EC44D832C4543636F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6A12BEE1FF8843B7268267FDDE4FD9D3 /* MyPlugin.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BC5DB8D558D20FCB311892E95CF8B8FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB2B63254C6A28E8429C39A85431F3CF /* Pods-wxed34e654870cba42 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				64EDE8044ABBD9512797538F545C2C78 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				E1AC5332C5839C43292591FDC95A382A /* Pods */,
+				BC5DB8D558D20FCB311892E95CF8B8FD /* Products */,
+				210F6D6BADA84FD856D4FF365097CDDF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0BAD7293D182B21DA80137C9965B536 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2849C6554CF5180AE998713E7A50CC8 /* GTCommonSDK-xcframeworks.sh */,
+				4D8E53937D67A1DD81D6161B1FA12E9C /* GTCommonSDK.debug.xcconfig */,
+				CE6FA409EBADB8F7A8980E204E60D2E0 /* GTCommonSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTCommonSDK";
+			sourceTree = "<group>";
+		};
+		E1AC5332C5839C43292591FDC95A382A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BFA8E0E36A456573017617A42FD9631 /* GCIDOSDK */,
+				1FE1B6E9DA1C8128D535B41F2D229B23 /* GTCommonSDK */,
+				11B4202594A8723CC04520EDE68A7EC2 /* ZXSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1E988B1CD9FE79263CD9E89FDE9C44F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE513D6342272EA8BAE6EDDE303F4B94 /* GTCommonSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4FD56F2CB2DE28878680D5F217797C7 /* MyPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				A9F741E3ED632A8EC44D832C4543636F /* Pod */,
+				8F859591EC404A8C4E102E47E55E08FE /* Support Files */,
+			);
+			name = MyPlugin;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F15F60103E2A145DF369FA5BE5E34024 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0A7360FDA5BE7853FA64EEE1CA70756 /* ZXSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C3B6AB561559A6F66A02B3199BD63240 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F45E6849BD16E901B01C614E41B8B98 /* Pods-wxed34e654870cba42-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AEABD09CC3DA6B0A685B27F705CF1C0E /* Pods-wxed34e654870cba42 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D78F0FEC58BB5F894FFA6DB9EEEC5C /* Build configuration list for PBXNativeTarget "Pods-wxed34e654870cba42" */;
+			buildPhases = (
+				C3B6AB561559A6F66A02B3199BD63240 /* Headers */,
+				8546444EEE994079DA7ADE19BD870E56 /* Sources */,
+				F5333EE3B0B5A60EFC74BAF86B6F1F1A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				751C1D5C2AD7BE0A0EB0CF9631FB55C0 /* PBXTargetDependency */,
+				3125C4023F4AA4B61156D67BD53DFD8D /* PBXTargetDependency */,
+				6A4A92FE9155D23FC41352044C6DD864 /* PBXTargetDependency */,
+				8935C9B562608A5E2BDE1D73E5F646C5 /* PBXTargetDependency */,
+			);
+			name = "Pods-wxed34e654870cba42";
+			productName = "Pods-wxed34e654870cba42";
+			productReference = BB2B63254C6A28E8429C39A85431F3CF /* Pods-wxed34e654870cba42 */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BC5DB8D558D20FCB311892E95CF8B8FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57F00620CC6085667A9D55C98C9CF24A /* GCIDOSDK */,
+				997E783A70C18DC9BA830488608C03AA /* GTCommonSDK */,
+				0476A22E99F1ED8272E989FD02B92D6E /* MyPlugin */,
+				AEABD09CC3DA6B0A685B27F705CF1C0E /* Pods-wxed34e654870cba42 */,
+				8194323886ECAF7E912EFDAFC84017AA /* ZXSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE0C7582155C1A3A6E4D7CE2CEE1896B /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/GCIDOSDK/GCIDOSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/GCIDOSDK/GCIDOSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/GCIDOSDK/GCIDOSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C768A3EDB887B8DD6F23BA4E3F822EE3 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/GTCommonSDK/GTCommonSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/GTCommonSDK/GTCommonSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/GTCommonSDK/GTCommonSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8546444EEE994079DA7ADE19BD870E56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4ACBBD294B6D6C71794278119ABC4EE /* Pods-wxed34e654870cba42-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2185198F4CE068D893950ECB623EB276 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTCommonSDK;
+			target = 997E783A70C18DC9BA830488608C03AA /* GTCommonSDK */;
+			targetProxy = C8861A83986691DFA1D0333EB060C23F /* PBXContainerItemProxy */;
+		};
+		3125C4023F4AA4B61156D67BD53DFD8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTCommonSDK;
+			target = 997E783A70C18DC9BA830488608C03AA /* GTCommonSDK */;
+			targetProxy = 2EA88307324895BA78EAE3836604D692 /* PBXContainerItemProxy */;
+		};
+		6A4A92FE9155D23FC41352044C6DD864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MyPlugin;
+			target = 0476A22E99F1ED8272E989FD02B92D6E /* MyPlugin */;
+			targetProxy = 077546D9FB829D5346415CD7C1DAD003 /* PBXContainerItemProxy */;
+		};
+		6F293667350CBC2087AD00B35B474FDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCIDOSDK;
+			target = 57F00620CC6085667A9D55C98C9CF24A /* GCIDOSDK */;
+			targetProxy = 914AADF885E91A7599C02DC3FB6272FC /* PBXContainerItemProxy */;
+		};
+		751C1D5C2AD7BE0A0EB0CF9631FB55C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCIDOSDK;
+			target = 57F00620CC6085667A9D55C98C9CF24A /* GCIDOSDK */;
+			targetProxy = 7D17D9651C1FDBA4BCA9017C749CEB9A /* PBXContainerItemProxy */;
+		};
+		8935C9B562608A5E2BDE1D73E5F646C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZXSDK;
+			target = 8194323886ECAF7E912EFDAFC84017AA /* ZXSDK */;
+			targetProxy = 4FC77ADBAF3DA3F37EB7F2881676F385 /* PBXContainerItemProxy */;
+		};
+		FC3803304F6A00503240473D323E21E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZXSDK;
+			target = 8194323886ECAF7E912EFDAFC84017AA /* ZXSDK */;
+			targetProxy = 3FAE300A630CBA7D325B6D5FC7C3828A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03A2A36F8974CCA1214A141C080AD7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00BE27273517B9B595C392E91409B3E8 /* Pods-wxed34e654870cba42.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-wxed34e654870cba42/Pods-wxed34e654870cba42.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		199D5A78D2B1CA3660617517AC986974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA2ACD760060248EDCF1C044116F1AD /* GCIDOSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		294413CC44FC577538B5CE6EF16CB536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE6FA409EBADB8F7A8980E204E60D2E0 /* GTCommonSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A65D1F6E876D5A5EDC6A4A8D4A8FD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF3D60CD339CC5DF3E4D7C48C68DDE06 /* ZXSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8772A63E41D24CFAD7C2846D67DB06B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62FC92F28054C350040054A169E69B78 /* Pods-wxed34e654870cba42.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-wxed34e654870cba42/Pods-wxed34e654870cba42.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87F763058DE0C8648A29899D4F247F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CF08AF6B5E968E1330EEC1F36D3CFA0 /* MyPlugin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		ACE3FFC36F7FD0C979128B3933EAD271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D8E53937D67A1DD81D6161B1FA12E9C /* GTCommonSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C5BAB58D0B6C6CED8D5858AD03C5ED03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF23257EF9E126ED829AC9988840B92 /* ZXSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0B7AF87A2F22C79CA17C35859835213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB09CFFB84AD510F5FC36BE6EAC78F0 /* GCIDOSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4CA11485515537CD967268ED592E86B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A00CAB05FCC1F9BD8FE13A0620AE1AF /* MyPlugin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		020F79FAC2B23DF518278E01ACE62CB4 /* Build configuration list for PBXAggregateTarget "MyPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CA11485515537CD967268ED592E86B /* Debug */,
+				87F763058DE0C8648A29899D4F247F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16D78F0FEC58BB5F894FFA6DB9EEEC5C /* Build configuration list for PBXNativeTarget "Pods-wxed34e654870cba42" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8772A63E41D24CFAD7C2846D67DB06B9 /* Debug */,
+				03A2A36F8974CCA1214A141C080AD7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		925AE37F870B95EE783FF7E4B0F6CBB2 /* Build configuration list for PBXAggregateTarget "GTCommonSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE3FFC36F7FD0C979128B3933EAD271 /* Debug */,
+				294413CC44FC577538B5CE6EF16CB536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95CEA03A8BFD21854652E1A78C5AD770 /* Build configuration list for PBXAggregateTarget "GCIDOSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0B7AF87A2F22C79CA17C35859835213 /* Debug */,
+				199D5A78D2B1CA3660617517AC986974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF16DD0C65D103BA9A0FAA1C2DCE2FA5 /* Build configuration list for PBXAggregateTarget "ZXSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A65D1F6E876D5A5EDC6A4A8D4A8FD0E /* Debug */,
+				C5BAB58D0B6C6CED8D5858AD03C5ED03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
