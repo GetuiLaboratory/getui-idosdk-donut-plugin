@@ -1,7 +1,17 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.github.kezong:fat-aar:1.3.8'
+    }
+}
+
 apply from: rootProject.file('gradle/build_library.gradle')
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-
+apply plugin: 'com.kezong.fat-aar'
 
 
 android {
@@ -54,7 +64,11 @@ if (!file("$libsDir/com/tencent/luggage/wxa-standalone-open-runtime-SaaA-plugin-
     file(zipFilePath).delete()
 }
 
-
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
 
     dependencies {
         implementation "androidx.exifinterface:exifinterface:1.1.0"
@@ -68,6 +82,8 @@ if (!file("$libsDir/com/tencent/luggage/wxa-standalone-open-runtime-SaaA-plugin-
 
         compileOnly("com.tencent.luggage:wxa-standalone-open-runtime-SaaA-plugin-sdk:$saaaSDKVersionDepend") {}
 
+        embed(name: 'gtc-3.2.17.0', ext: 'aar')
+        embed(name: 'GSIDO-1.4.8.1-release', ext: 'aar')
     }
 
     clearDuplicatedJniLibs([

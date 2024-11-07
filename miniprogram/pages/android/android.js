@@ -16,10 +16,15 @@ Page({
   },
 
   onLoadPlugin() {
+    const listener = (param) => {
+      console.log('onMiniPluginEvent listener '+JSON.stringify(param))
+      }
+      
     wx.miniapp.loadNativePlugin({
       pluginId: miniAppPluginId,
       success: (plugin) => {
         console.log('load plugin success', plugin)
+        plugin.onMiniPluginEvent(listener)
         this.setData({
           myPlugin: plugin
         })
@@ -36,13 +41,21 @@ Page({
       console.log('plugin is undefined')
       return
     }
-    const ret = myPlugin.mySyncFunc({ a: 'hello', b: [1,2] })
-    console.log('mySyncFunc ret:', ret)
+    myPlugin.setDebugEnable({"debugEnable":true})
+    
+    myPlugin.init({"channel":"donut","appid":"djYjSlFVMf6p5YOy2OQUs8"})
+    const gtcid =  myPlugin.getGtcId()
+    console.log('getGtcId '+gtcid)
+    myPlugin.onEvent(
+      {"eventId":"idididid","jsonObject":{"a":1,"b":"你好"},"ext":"dddddddd"})
 
-    myPlugin.myAsyncFuncwithCallback({ a: 'hello', b: [1,2] }, (ret) => {
-      console.log('myAsyncFuncwithCallback ret:', ret)
-    })
+      myPlugin.setProfile({"sex":"男","age":"111"})
+
+      myPlugin.onBeginEvent({"eventId":"qqqq","jsonObject":{"aaa":"ddddd"}})
+      myPlugin.onEndEvent({"eventId":"qqqq","jsonObject":{"aaa":"ddddd"}})
+
   },
+
 
   copyLink() {
     wx.setClipboardData({
