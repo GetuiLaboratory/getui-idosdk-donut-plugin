@@ -25,8 +25,10 @@ class PluginManager : NativePluginBase(), NativePluginInterface {
             val map = HashMap<String, Any>()
             when (intent.action) {
                 "gtcId" -> {
-                    map["method"] = "gtcId"
-                    map["param"] = intent.getStringExtra("gtcId")!!
+                    map["method"] = "gtcIdCallback"
+                    val map2 = HashMap<String, Any>()
+                    map2.put("result", intent.getStringExtra("gtcId")!!)
+                    map["param"] = map2
                 }
             }
             if (map["method"] != null) {
@@ -50,12 +52,10 @@ class PluginManager : NativePluginBase(), NativePluginInterface {
     }
 
     @SyncJsApi(methodName = "setDebugEnable")
-    fun setDebugEnable(data: JSONObject?, activity: Activity) {
+    fun setDebugEnable(data: JSONObject, activity: Activity) {
         try {
-            val debugEnable = if (data?.has("debugEnable") == true) data.get("debugEnable") as Boolean else false
-            Log.d(TAG, "setDebugEnable: ${debugEnable}")
             val intent = Intent("setDebugEnable")
-            intent.putExtra("param", debugEnable)
+            intent.putExtra("param", data.toString())
             this.mainProcessTask.setIntent(intent)
             this.mainProcessTask.execAsync()
         } catch (e: Throwable) {
@@ -75,7 +75,7 @@ class PluginManager : NativePluginBase(), NativePluginInterface {
     }
 
 
-    @SyncJsApi(methodName = "onEvent")
+    @SyncJsApi(methodName = "trackCountEvent")
     fun onEvent(data: JSONObject, activity: Activity) {
         try {
             val intent = Intent("onEvent")
@@ -209,12 +209,10 @@ class PluginManager : NativePluginBase(), NativePluginInterface {
         }
     }
 
-    /**
-     * IOS 特有
-     * 设置App Groups ID
-     * 通过苹果开发者后台创建Group Identify， 用于App主包和Extension之间的数据打通。
-     *
-     */
+    @SyncJsApi(methodName = "getVersion")
+    fun getVersion(data: JSONObject, activity: Activity): String {
+        return GsManager.getInstance().version
+    }
 
 
     fun toMap(bean: Any): Map<String, Any?> {

@@ -12,11 +12,12 @@
 
 
 ## android API说明：
+插件桥接了原生SDK API，原生SDK API具体说明可参考[官网文档中心 iOS API](https://docs.getui.com/ido/mobile/android/api/)
 
 ## iOS 使用说明：
 插件桥接了原生SDK API，原生SDK API具体说明可参考[官网文档中心 iOS API](https://docs.getui.com/ido/mobile/ios/api/)
 
-### 插件js api说明：
+## 插件js api说明：
 ```js
 usage() { 
 
@@ -40,7 +41,7 @@ usage() {
       myPlugin
     } = this.data;
     
-  
+    //(只支持IOS)
     myPlugin.setApplicationGroupIdentifier({
       'identifier': 'group.ent.com.getui.www'
     })
@@ -62,32 +63,37 @@ usage() {
     })
     //上述对sdk的属性配置，需要在startsdk之前调用。
      
-    //启动sdk
+    //(IOS)启动sdk
     myPlugin.startSdk({
       'appId': 'xXmjbbab3b5F1m7wAYZoG2',
       'channelId': ''
     })
-		
-		//日志开关
+     //(android)启动sdk
+    myPlugin.init({"channel":"donut","appid":"djYjSlFVMf6p5YOy2OQUs8"})
+
+		  //日志开关
     myPlugin.setDebugEnable({
       'debugEnable': 1
     })
-
+		
 	 	//获取gtcid
     console.log('gtcid=', myPlugin.getGtcId());
  
   	//计时事件-开始
     myPlugin.onBeginEvent({
-      'eventId': '001'
+      'eventId': '001',
+      "jsonObject":{....}//android选填
     })
 
 		//计时事件-结束
     myPlugin.onEndEvent({
       'eventId': '001',
+      //选填
       'jsonObject': {
         'name': 'superman',
         'age': 18
       },
+      //选填
       'withExt': 'this is ext string'
     })
     

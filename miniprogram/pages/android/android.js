@@ -41,20 +41,45 @@ Page({
       console.log('plugin is undefined')
       return
     }
-    myPlugin.setDebugEnable({"debugEnable":true})
+    myPlugin.setDebugEnable({"debugEnable":1})
+    
+    myPlugin.setEventUploadInterval({
+      'timeMillis': 5000
+    }) 
+  
+    myPlugin.setEventForceUploadSize({
+      'size': 30
+    }) 
+  
+    myPlugin.setProfileUploadInterval({
+      'timeMillis':5000
+    })
+    
+    myPlugin.setProfileForceUploadSize({
+       'size':5
+    })
     
     myPlugin.init({"channel":"donut","appid":"djYjSlFVMf6p5YOy2OQUs8"})
     const gtcid =  myPlugin.getGtcId()
     console.log('getGtcId '+gtcid)
-    myPlugin.onEvent(
-      {"eventId":"idididid","jsonObject":{"a":1,"b":"你好"},"ext":"dddddddd"})
+    let ver = myPlugin.getVersion()
+    console.log(ver)
 
-      myPlugin.setProfile({"sex":"男","age":"111"})
+    myPlugin.trackCountEvent(
+      {"eventId":"idididid","jsonObject":{"a":1,"b":"你好"},"withExt":"dddddddd"})
 
+      myPlugin.setProfile({'jsonObject': {
+        'property1': 'value1',
+        'property2': 100
+      },
+      'withExt':'this is ext string3'})
+    
       myPlugin.onBeginEvent({"eventId":"qqqq","jsonObject":{"aaa":"ddddd"}})
       myPlugin.onEndEvent({"eventId":"qqqq","jsonObject":{"aaa":"ddddd"}})
-
-  },
+  
+  
+  
+    },
 
 
   copyLink() {

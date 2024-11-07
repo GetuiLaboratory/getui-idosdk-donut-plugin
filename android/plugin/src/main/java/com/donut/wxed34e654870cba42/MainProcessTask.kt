@@ -1,4 +1,3 @@
-import android.content.Context
 import android.content.Intent
 import android.os.Parcel
 import android.util.Log
@@ -11,8 +10,6 @@ import com.getui.gtc.base.util.CommonUtil
 import com.tencent.luggage.wxa.SaaA.plugin.NativePluginMainProcessTask
 import kotlinx.android.parcel.Parcelize
 import org.json.JSONObject
-import java.util.Timer
-import java.util.TimerTask
 
 @Parcelize
 class MainProcessTask(private var intent: Intent) :
@@ -54,7 +51,7 @@ class MainProcessTask(private var intent: Intent) :
                 init(intent)
             }
             "setDebugEnable" -> {
-                setDebugEnable(intent.getBooleanExtra("param", false))
+                setDebugEnable(intent)
             }
             "getGtcId" -> {
                 getGtcId()
@@ -125,6 +122,7 @@ class MainProcessTask(private var intent: Intent) :
         if (appid != null) {
             GsConfig.setAppId(appid as String)
         }
+
         GsConfig.setInstallChannel(jsonObject.getString("channel") as String)
         //测试失败
         var callback: IGtcIdCallback = object : IGtcIdCallback {
@@ -140,8 +138,11 @@ class MainProcessTask(private var intent: Intent) :
         GsManager.getInstance().init(GtcProvider.context())
     }
 
-    fun setDebugEnable(debugEnable: Boolean) {
-        GsConfig.setDebugEnable(debugEnable)
+    fun setDebugEnable(intent: Intent) {
+        val param = intent.getStringExtra("param")
+        val jsonObject = JSONObject(param)
+        val debugEnable = jsonObject.getInt("debugEnable")
+        GsConfig.setDebugEnable(debugEnable == 1)
     }
 
     fun getGtcId() {
@@ -156,15 +157,16 @@ class MainProcessTask(private var intent: Intent) :
         val jsonObject = JSONObject(param)
         val eventId = jsonObject.getString("eventId")
         val jsonObj = if (jsonObject.has("jsonObject")) jsonObject.getJSONObject("jsonObject") else null
-        val ext = if (jsonObject.has("ext")) jsonObject.getString("ext") else null
-        GsManager.getInstance().onEvent(eventId, jsonObj, ext)
+        val withExt = if (jsonObject.has("withExt")) jsonObject.getString("withExt") else null
+        GsManager.getInstance().onEvent(eventId, jsonObj, withExt)
     }
 
     fun setProfile(intent: Intent) {
         val param = intent.getStringExtra("param")
         val jsonObject = JSONObject(param)
-//        val ext = if (jsonObject.has("ext")) jsonObject.getString("ext") else null
-        GsManager.getInstance().setProfile(jsonObject, null)
+        val jsonObj = jsonObject.getJSONObject("jsonObject")
+        val withExt = if (jsonObject.has("withExt")) jsonObject.getString("withExt") else null
+        GsManager.getInstance().setProfile(jsonObj, withExt)
     }
 
     fun onBeginEvent(intent: Intent) {
@@ -209,10 +211,10 @@ class MainProcessTask(private var intent: Intent) :
     }
 
     private fun onActivityResumed(intent: Intent) {
-        Log.d(TAG,"onActivityResumed")
+        Log.d(TAG, "onActivityResumed")
         GsManager.getInstance().onActivityResumed()
         lifecycle.onActivityResumed(null)
-   }
+    }
 
     private fun onActivityPaused(intent: Intent) {
         Log.i(TAG, "onActivityPaused isForeground ${CommonUtil.isAppForeground()}")
