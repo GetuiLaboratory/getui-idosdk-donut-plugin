@@ -25,6 +25,7 @@ WEAPP_EXPORT_PLUGIN_METHOD_SYNC(onEndEvent, @selector(onEndEvent:))
 WEAPP_EXPORT_PLUGIN_METHOD_SYNC(trackCountEvent, @selector(trackCountEvent:))
 WEAPP_EXPORT_PLUGIN_METHOD_SYNC(setProfile, @selector(setProfile:))
 WEAPP_EXPORT_PLUGIN_METHOD_SYNC(getGtcId, @selector(getGtcId:))
+WEAPP_EXPORT_PLUGIN_METHOD_SYNC(setUserId, @selector(setUserId:))
 WEAPP_EXPORT_PLUGIN_METHOD_SYNC(setApplicationGroupIdentifier, @selector(setApplicationGroupIdentifier:))
 WEAPP_EXPORT_PLUGIN_METHOD_SYNC(setEventUploadInterval, @selector(setEventUploadInterval:))
 WEAPP_EXPORT_PLUGIN_METHOD_SYNC(setEventForceUploadSize, @selector(setEventForceUploadSize:))
@@ -110,6 +111,13 @@ WEAPP_EXPORT_PLUGIN_METHOD_SYNC(getVersion, @selector(getVersion))
     NSString *gtcid = [GTCountSDK gtcid];
     NSLog(@"\n>>>IDOSDK getGtcId:%@", gtcid);
     return gtcid?:@"";
+}
+
+- (id)setUserId:(NSDictionary *)param {
+    NSString *userid = param[@"userid"];
+    [[GTCountSDK sharedInstance] setUserId:userid];
+    NSLog(@"\n>>>IDOSDK setUserId:%@", userid);
+    return @(1);
 }
 
 - (id)setApplicationGroupIdentifier:(NSDictionary *)param {
